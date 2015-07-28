@@ -40,8 +40,17 @@ Template.task.events({
   'click .remove': function(){
 
     Task.remove(this._id);
+  },
+  'click .toggle-checked': function(){
+    Task.update(this._id,{$set : {checked: !this.checked}});
   }
 });
+
+
+  Accounts.ui.config({
+
+    passwordSignupFields: "USERNAME_ONLY",
+  });
 
 
 }

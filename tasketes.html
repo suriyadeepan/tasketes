@@ -7,26 +7,28 @@
 <div class = container>
   <header>
     <h2>TODO</h2>
+    {{#if currentUser}}
     <form class = "new-task">
       <input type="text" name="title" placeholder="new task" >
       <input type="submit" value="Submit">
     </form>
+    {{/if}}
   </header>
 <div class = container>
 {{#each tasks }}
 {{> task}}
 {{/each}}
 </div>
+{{> loginButtons}}
 </div>
 
 </body>
 
 <template name="task">
-
-
-    <div class="container">
-      <div class="container">{{title}}</div>
-      <div class="container"><button class="btn btn-danger remove">remove</button></div>
+    <div class="{{#if checked}}checked{{/if}}">
+        {{#if currentUser}}<input type="checkbox"  checked={{checked}} class="toggle-checked">{{/if}}
+        <span type=text>{{title}}</span>
+        {{#if currentUser}}<button class="btn btn-danger remove">remove</button>{{/if}}
     </div>
     <hr>
 </template>

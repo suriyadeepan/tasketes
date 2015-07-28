@@ -13,3 +13,7 @@ Glorified TODO List : A simple interface to keep track of your tasks
 cd tasketes
 meteor
 ```
+# Packages
+
+- bootstrap
+- jquery

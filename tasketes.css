@@ -1,5 +1,16 @@
 /* CSS declarations go here */
 body{
-  background: #fefefe;
-  
+  background: #fdfcfc;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.checked{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+  font-weight: bold;
+
+  text-decoration: line-through;
 }
