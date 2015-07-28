@@ -17,3 +17,6 @@ meteor
 
 - bootstrap
 - jquery
+- accounts-ui
+- accounts-password
+- accounts-twitter
