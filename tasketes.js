@@ -8,7 +8,7 @@ if (Meteor.isClient) {
   Template.body.helpers({
 
     tasks : function(){
-      return Task.find();
+      return Task.find({userId : Meteor.userId()});
 
     }
 
@@ -23,6 +23,7 @@ if (Meteor.isClient) {
 
       //title = event.target.title.value;
       Task.insert({
+        userId : Meteor.userId(),
         title : event.target.title.value,
         createdAt : new Date()
       });
