@@ -1,6 +1,6 @@
 /* CSS declarations go here */
 body{
-  background: #fdfcfc;
+  background-color: #00000;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 23px;
   font-weight: bold;
@@ -14,3 +14,11 @@ body{
 
   text-decoration: line-through;
 }
+
+.my-form-container{
+  width:1080px;
+  height: 50px;
+  float:inherit ;
+  padding:50px;
+   background: #f0f0f0
+ }
