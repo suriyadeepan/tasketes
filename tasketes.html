@@ -8,25 +8,31 @@
 
 <div class = "my-form-container">
   <header>
-    <h2>TODO</h2>
+    <center>
+    <h1>TODO</h1>
+  </center>
     {{#if currentUser}}
 
+    <center>
     <form class = "new-task">
-       <div class="col-lg-1">
-        <input type="text" name="title" placeholder="Add New Task" >
-        <input type="submit" value="Submit" class="btn btn-success pull-right">
-        </div>
-    </form>
 
+        <input type="text" name="title" placeholder="Add New Task" >
+
+        <input type="submit" value="Submit" class="btn btn-success">
+
+    </form>
+  </center>
     {{/if}}
   </header>
+</div>
+<br>
+<br>
 <div class = "container">
 {{#each tasks }}
 {{> task}}
 {{/each}}
 </div>
 {{> loginButtons}}
-</div>
 </div>
 </body>
 
